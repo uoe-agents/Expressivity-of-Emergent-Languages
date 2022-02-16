@@ -1,0 +1,14 @@
+brokenaxes
+dataclasses
+editdistance
+matplotlib
+numpy 
+scikit-image
+scikit-learn
+scipy
+seaborn
+statsmodels
+torch
+torchvision
+tqdm
+varname
