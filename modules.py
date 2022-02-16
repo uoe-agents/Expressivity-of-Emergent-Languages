@@ -41,3 +41,24 @@ class BaseSender(nn.Module):
         for block in self._modules:
             for m in self._modules[block]:
                 kaiming_init(m)
+
+
+class SymbolicSenderMLP(BaseSender):
+    """"""
+
+    def __init__(self, input_dim=18, hidden_dim=256) -> None:
+        super().__init__(hidden_dim)
+
+        self.input_dim = input_dim
+
+        self.encoder = nn.Sequential(
+            nn.Linear(self.input_dim, self.hidden_dim),
+            nn.ReLU(True),
+            nn.Linear(self.hidden_dim, self.hidden_dim),
+            nn.ReLU(True),
+            nn.Linear(self.hidden_dim, self.hidden_dim),
+            nn.ReLU(True),
+            nn.Linear(self.hidden_dim, self.hidden_dim)
+        )
+
+        self.weight_init()
