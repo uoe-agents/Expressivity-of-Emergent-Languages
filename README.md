@@ -8,7 +8,8 @@ The official code base of [Expressivity of Emergent Language is a Trade-off betw
 
 ```
 # 1. clone the repo
-git clone git@github.com:uoe-agents/Expressivity-of-Emergent-Languages.git
+git clone git@github.com:uoe-agents/Expressivity-of-Emergent-Languages.git;
+cd Expressivity-of-Emergent-Languages
 # 2. create a virtual environment for the repo
 python3 -m venv expressivity;
 source expressivity/bin/activate;
