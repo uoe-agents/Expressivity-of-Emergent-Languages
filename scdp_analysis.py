@@ -67,7 +67,7 @@ def build_dicts(log_path:str='./logs/') -> None:
                 _add_data_to_dict(source_name + 'f', target_game)
                 
                 
-def plot_gap_between_fixed_unfixed_context(result_path:str='./results/'):
+def plot_gap_between_fixed_unfixed_context(result_path:str='./results/') -> None:
     fig = plt.figure(figsize=(11, 6))
     ax = fig.add_subplot(111)
     
@@ -165,9 +165,7 @@ def plot_expressivity_vs_complexity(result_path:str='./results') -> None:
         print("\multicolumn{1}{c|}{" + "%.4f" % stds[-1] + "} \\\\ \midrule ")
 
 
-def plot_source_on_target(target_game:str,
-                            result_path:str='./results/',
-) -> None:
+def plot_source_on_target(target_game:str, result_path:str='./results/') -> None:
 
     # 2. plot (x: target, y: accuracy)
     x_pos = np.arange(len(SOURCE_GAMES.keys())) + 1
@@ -208,7 +206,7 @@ if __name__ == '__main__':
                         help='number of epochs shown in the msg_num curves.')
     parser.add_argument('--smooth_window_size', type=int, default=2, help='window size for smoothing the curves.')
     parser.add_argument('--msgnum_window_size', type=int, default=20, help='window size for number of messages.')
-    parser.add_argument('--log_path', type=str, default='./log/',
+    parser.add_argument('--log_path', type=str, default='./log_scdp/',
                         help='path to the log files directory')
     parser.add_argument('--result_path', type=str, default='./results/',
                         help='Path to the dir for storing results.')
