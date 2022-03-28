@@ -1,5 +1,5 @@
 # Expressivity-of-Emergent-Languages
-The official code base of [Expressivity of Emergent Language is a Trade-off between Contextual Complexity and Unpredictability](https://openreview.net/forum?id=CHD9Mp2qYp6) (ICLR-2022).
+The official code base of [Expressivity of Emergent Language is a Trade-off between Contextual Complexity and Unpredictability](https://openreview.net/forum?id=WxuE_JWxjkW) (ICLR-2022).
 
 ## Table of Contents
 1. Citation Information
